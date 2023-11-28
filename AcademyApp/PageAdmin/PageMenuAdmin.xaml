@@ -1,0 +1,34 @@
+﻿<Page x:Class="AcademyApp.PageAdmin.PageMenuAdmin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademyApp.PageAdmin"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="800"
+      Title="Окно преподавателя">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <Button 
+                Name="BtnAddStudent"
+                Click="BtnAddStudent_Click"
+                Content="Добавить студента"/>
+            <Button 
+                Name="BtnAddEvaluation"
+                Click="BtnAddEvaluation_Click"
+                Content="Добавить оценку"/>
+            <Button 
+                Name="BtnListStudent"
+                Click="BtnListStudent_Click"
+                Content="Список студентов"/>
+            <Button 
+                Name="BtnEditEvaluation"
+                Click="BtnEditEvaluation_Click"
+                Content="Редактирование оценки"/>
+            <Button Content="Удалить студента"/>
+            <Button Content="MVC"/>
+        </StackPanel>
+    </Grid>
+</Page>

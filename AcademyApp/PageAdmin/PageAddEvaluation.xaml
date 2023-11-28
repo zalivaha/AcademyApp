@@ -1,0 +1,63 @@
+﻿<Page x:Class="AcademyApp.PageAdmin.PageAddEvaluation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademyApp.PageAdmin"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="800"
+      Title="Форма добавления оценки">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Style="{StaticResource TxtStyleDefault}"
+                    Text="Выберите группу:"/>
+                <ComboBox 
+                    SelectionChanged="CmbGroup_SelectionChanged"
+                    Name="CmbGroup"
+                    Style="{StaticResource CmbStyleDefault}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Style="{StaticResource TxtStyleDefault}"
+                    Text="Выберите студента:"/>
+                <ComboBox 
+                    Name="CmbStudent"
+                    Style="{StaticResource CmbStyleDefault}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Style="{StaticResource TxtStyleDefault}"
+                    Text="Выберите дисциплину:"/>
+                <ComboBox 
+                    Name="CmbDiscipline"
+                    Style="{StaticResource CmbStyleDefault}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock 
+                    Style="{StaticResource TxtStyleDefault}"
+                    Text="Введите оценку:"/>
+                
+                <TextBox 
+                    PreviewTextInput="TxbEvaluation_PreviewTextInput"
+                    TextChanged="TxbEvaluation_TextChanged"
+                    Name="TxbEvaluation"
+                    Style="{StaticResource TxbStyleDefault}"/>
+            </StackPanel>
+            <Button 
+                    IsEnabled="False"
+                    Name="BtnAccept"
+                    Click="BtnAccept_Click"
+                    Content="Применить"
+                    Style="{StaticResource BtnStyleAccept}"/>
+        </StackPanel>
+        
+    </Grid>
+</Page>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="760164e2acf7468f8860c371d450bd68" Name="Diagram1" ZoomLevel="89">
+        <EntityTypeShape EntityType="AcademyWsrModel.Discipline" Width="1.5" PointX="0.75" PointY="8.75" />
+        <EntityTypeShape EntityType="AcademyWsrModel.FormTime" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="AcademyWsrModel.Journal" Width="1.5" PointX="3" PointY="3.625" />
+        <EntityTypeShape EntityType="AcademyWsrModel.NameGroup" Width="1.5" PointX="0.75" PointY="4" />
+        <EntityTypeShape EntityType="AcademyWsrModel.Role" Width="1.5" PointX="5.75" PointY="7.875" />
+        <EntityTypeShape EntityType="AcademyWsrModel.Special" Width="1.5" PointX="3.75" PointY="9.5" />
+        <EntityTypeShape EntityType="AcademyWsrModel.Student" Width="1.5" PointX="6" PointY="3.375" />
+        <EntityTypeShape EntityType="AcademyWsrModel.sysdiagrams" Width="1.5" PointX="8.75" PointY="1.25" />
+        <EntityTypeShape EntityType="AcademyWsrModel.Teacher" Width="1.5" PointX="3" PointY="12.75" />
+        <EntityTypeShape EntityType="AcademyWsrModel.User" Width="1.5" PointX="8" PointY="7.5" />
+        <EntityTypeShape EntityType="AcademyWsrModel.YearAdd" Width="1.5" PointX="3.75" PointY="7.125" />
+        <AssociationConnector Association="AcademyWsrModel.FK_Journal_Discipline" />
+        <AssociationConnector Association="AcademyWsrModel.FK_Teacher_Discipline" />
+        <AssociationConnector Association="AcademyWsrModel.FK_Student_FormTime" />
+        <AssociationConnector Association="AcademyWsrModel.FK_Journal_NameGroup" />
+        <AssociationConnector Association="AcademyWsrModel.FK_Journal_Student" />
+        <AssociationConnector Association="AcademyWsrModel.FK_Student_NameGroup" />
+        <AssociationConnector Association="AcademyWsrModel.FK_User_Role" />
+        <AssociationConnector Association="AcademyWsrModel.FK_Student_Special" />
+        <AssociationConnector Association="AcademyWsrModel.FK_Student_YearAdd" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

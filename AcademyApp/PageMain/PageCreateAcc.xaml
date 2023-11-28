@@ -1,0 +1,66 @@
+﻿<Page x:Class="AcademyApp.PageMain.PageCreateAcc"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademyApp.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="800"
+      Title="Окно Регистрации">
+
+    <Grid>
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            
+            <StackPanel Orientation="Horizontal"
+                        Margin="5,5,5,0">
+                <TextBlock Text="Введите Имя:"
+                           Style="{StaticResource TxtReg}"/>
+                <TextBox Name="TxbName"
+                         Style="{StaticResource TxbReg}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="5,5,5,0">
+                <TextBlock Text="Введите Логин:"
+                           Style="{StaticResource TxtReg}"/>
+                <TextBox Name="TxbLogin"
+                         Style="{StaticResource TxbReg}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        Margin="5,5,5,0">
+                <TextBlock Text="Введите пароль:"
+                           Margin="0"
+                       Style="{StaticResource TxtReg}"/>
+                <TextBox Name="TxbPass"
+                    Style="{StaticResource TxbReg}"/>
+            </StackPanel>
+            
+            <StackPanel HorizontalAlignment="Right"
+                        Margin="5,5,5,0">
+                <PasswordBox
+                    Name="PsbPass"
+                    PasswordChanged="PsbPass_PasswordChanged"
+                    Style="{StaticResource PsbReg}"/>
+            </StackPanel>
+            
+
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Button Content="Создать"
+                        IsEnabled="False"
+                        Name="BtnCreate"
+                        Click="BtnCreate_Click"
+                        Style="{StaticResource BtnStyleAccept}"
+                        />
+                <Button Content="Назад"
+                        Name="BtnBack"
+                        Click="BtnBack_Click"
+                        Style="{StaticResource BtnBack}"/>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Page>

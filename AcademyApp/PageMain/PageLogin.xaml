@@ -1,0 +1,42 @@
+﻿<Page x:Class="AcademyApp.PageMain.PageLogin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AcademyApp.PageMain"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="800"
+      Title="Окно Авторизации">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="250">
+            <TextBlock Text="Введите логин:"
+                       />
+            <TextBox Name="TxbLogin"
+                     Margin="5,0,5,0"/>
+            <TextBlock Text="Введите пароль:"
+                       />
+            <PasswordBox Name="PsbPassword"
+                     Margin="5"/>
+            <TextBox Name="TxbPassword"
+                     Margin="5,0,5,0"/>
+            
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Button Content="Войти"
+                        Style="{StaticResource BtnStyleAccept}"
+                        Name="BtnInLogin"
+                        Click="BtnInLogin_Click"
+                        />
+                <Button Content="Регистрация"
+                        Margin="0,5,5,5"
+                        Name="BtnReg"
+                        Click="BtnReg_Click"
+                        Style="{StaticResource BtnRegistration}"
+                    />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
