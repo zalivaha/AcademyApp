@@ -10,7 +10,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="100*"/>
             <RowDefinition Height="150*"/>
-            <RowDefinition Height="250*"/>
+           
         </Grid.RowDefinitions>
         
         <!-- Шапка проекта -->
